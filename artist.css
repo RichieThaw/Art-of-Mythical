@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style: normal;
+  /*color: rgb(181, 181, 181);*/
+}
+
+body {
+   background-color: #39445a;
+  /*background-image: url(https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg?auto=compress&cs=tinysrgb&w=800);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;*/
+
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  /*background-color:rgba(78, 155, 129, 0.9);*/
+  border-bottom: 2px solid rgb(45, 45, 45);
+  z-index: 1000;
+}
+
+#icon {
+  padding: 30px;
+  font-size: 50px;
+  cursor: pointer;
+  transition: color 0.5s;
+  color: rgb(181, 181, 181);
+}
+
+#icon:hover {
+  font-size: 60px;
+  color:rgb(154, 243, 213, 0.9)
+}
+
+#see {
+  position: absolute;
+  font-size: 30px;
+  top: 37px;
+  left: 515px;
+  color: rgb(181, 181, 181);
+  transition: color 0.5s;
+}
+
+#see:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 35px;
+}
+
+.find {
+  height: 50px;
+  width: 300px;
+}
+
+.find input[type="search"] {
+  margin-top: 4px;
+  height: 45px;
+  width: 330px;
+  margin-left: -15px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid rgb(181, 181, 181);
+  background: transparent;
+  font-size: 20px;
+  transition: width, height 0.3s;
+}
+
+.find input:hover { 
+  height: 50px;
+  color: rgb(154, 243, 213, 0.9);
+}
+
+.find input::placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color:rgb(181, 181, 181, 0.9)
+}
+
+.drop-down button {
+  background: transparent;
+  border: none;
+}
+
+.drop-down button a {
+  font-size: 50px;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.5s;
+  color: rgb(181, 181, 181);
+  text-decoration: none;
+}
+
+.drop-down button a:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 55px;
+}
+
+.drop-down a.name:visited {
+  color: red;
+}
+
+.drop-down ul li a {
+  justify-content: center;
+  text-align: center;
+  padding: 20px 20px;
+  line-height: 5px;
+  cursor: pointer;
+  list-style-type: none;
+  color: rgb(181, 181, 181);
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+.drop-down ul li {
+  list-style-type: none;
+}
+
+.drop-down .content {
+  display: none;
+  position: absolute;
+  margin-top: 7px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 350px;
+  border-radius: 20px;
+  font-size: 26px;
+  color: rgb(181, 181, 181);
+}
+
+.drop-down .content ul li a:hover {
+  color:rgb(154, 243, 213, 0.9)
+}
+
+.drop-down:hover .content {
+  display: block;
+  color: rgb(0, 0, 0);
+  z-index: 5;
+}
+
+
+.right-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.right-nav a {
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.4s;
+  color: rgb(181, 181, 181);
+  transition: font-size, color 0.5s;
+}
+
+.right-nav ul a:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 30px;
+}
+
+.main-img {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(https://images.pexels.com/photos/1764702/pexels-photo-1764702.jpeg?auto=compress&cs=tinysrgb&w=800);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 80vh;
+  transition: border 0.5s;
+  animation-name: main;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes main {
+  from{border: 5px solid white;}
+  to {border: 5px solid black;}
+}
+
+.img1 img {
+  width: 220px;
+  height: 270px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px;
+  transition: width,height, 0.5s;
+  transition: border, box-shadow,transform 0.5s;
+  opacity: 0.9;
+  transform: rotate(360);
+  transform: skewY(15deg);
+}
+
+.img1 img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover, .img5 img:hover {
+  border: 2px solid rgba(255, 0, 0, 0.9);
+  box-shadow: 3px 3px 5px 3px rgba(255, 0, 0, 0.4);
+  transform: scaleX(1.3);
+} 
+.main-img .img1 {
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.img2 img {
+  width: 220px;
+  height: 320px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px;
+  transition: width,height 0.5s;
+  transition: border, box-shadow,transform 0.5s;
+  opacity: 0.9;
+  transform: skewY(15deg);
+}
+
+.main-img .img2 {
+  margin-top: 60px;
+}
+
+.img3 img {
+  width: 230px;
+  height: 380px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px;
+  transition: width,height 0.5s;
+  transition: border, box-shadow,transform 0.5s;
+  opacity: 0.9;
+  transform: skewY(15deg);
+}
+
+.main-img .img3 {
+  margin-top: 60px;
+}
+
+.img4 img {
+  width: 220px;
+  height: 320px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px;
+  transition: width,height 0.5s;
+  transition: border, box-shadow,transform 0.5s;
+  opacity: 0.9;
+  transform: skewY(15deg);
+}
+
+.main-img .img4 {
+  margin-top: 60px;
+}
+
+.img5 img {
+  width: 220px;
+  height: 270px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px;
+  transition: width,height 0.5s;
+  transition: border, box-shadow,transform 0.5s;
+  opacity: 0.9;
+  transform: skewY(15deg);
+}
+
+.main-img .img5 {
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+.phase-one h2, .phase-two h2, .phase-three h2 {
+  display: block;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 700px;
+  text-align: center;
+  font-size: 50px;
+  transition: color, background-color 0.5s;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  animation-name: header;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes header {
+  from {color: #CADCFC;}
+  to {color: #00246B;}
+  from {background-color: #00246B;}
+  to {background-color: #CADCFC;}
+  from{border: 5px solid white;}
+  to {border: 5px solid black;}
+}
+
+.phase-two {
+  
+}
+.phase-one {
+
+}
+.phase-three {
+
+}
+.main-img a {
+  text-decoration: none;
+  color: inherit;
+}  
+.main-img .a1, .main-img .a4, .main-img .a5 {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 24px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+}
+
+.main-img .a2, .main-img .a3 {
+  position: absolute;
+  font-size: 25px;
+  margin-left: 20px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+} 
+
+.img1:hover .a1, .img2:hover .a2, .img3:hover .a3, .img4:hover .a4, .img5:hover .a5 {
+  visibility: visible;
+}
+
+.main-img .b1, .main-img .b5 {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 12px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+}
+
+.main-img .b4 {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 26px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+}
+
+.main-img .b2, .main-img .b3 {
+  position: absolute;
+  font-size: 25px;
+  margin-left: 47px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+} 
+
+.img1:hover .b1, .img2:hover .b2, .img3:hover .b3, .img4:hover .b4, .img5:hover .b5 {
+  visibility: visible;
+}
+
+.main-img .c1 {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 36px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+}
+
+.main-img .c4 {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 70px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+}
+
+.main-img .c5 {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 40px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+}
+
+.main-img .c2, .main-img .c3 {
+  position: absolute;
+  font-size: 25px;
+  margin-left: 40px;
+  color: rgba(255, 0, 0, 0.9);
+  bottom: 150px;
+  visibility: hidden;
+} 
+
+.img1:hover .c1, .img2:hover .c2, .img3:hover .c3, .img4:hover .c4, .img5:hover .c5 {
+  visibility: visible;
+}
+
+/*.artist-name ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+}
+
+.artist-name ul li {
+  list-style-type: none;
+  font-size: 30px;
+  top: 40px;
+  color: white;
+}
+
+.artist-name ul li a {
+   text-decoration: none;
+   color: inherit;
+}*/

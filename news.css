@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style: normal;
+  /*color: rgb(181, 181, 181);*/
+}
+
+body {
+  background-color: #101820;
+  /* background-image: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0,0.9);
+  /*background-color:rgba(78, 155, 129, 0.9);*/
+  border-bottom: 2px solid rgb(45, 45, 45);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#icon {
+  padding: 30px;
+  font-size: 50px;
+  cursor: pointer;
+  transition: color 0.5s;
+  color: rgb(181, 181, 181);
+}
+
+#icon:hover {
+  font-size: 60px;
+  color:rgb(154, 243, 213, 0.9)
+}
+
+#see {
+  position: absolute;
+  font-size: 30px;
+  top: 37px;
+  left: 515px;
+  color: rgb(181, 181, 181);
+  transition: color 0.5s;
+}
+
+#see:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 35px;
+}
+
+.find {
+  height: 50px;
+  width: 300px;
+}
+
+.find input[type="search"] {
+  margin-top: 4px;
+  height: 45px;
+  width: 330px;
+  margin-left: -15px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid rgb(181, 181, 181);
+  background: transparent;
+  font-size: 20px;
+  transition: width, height 0.3s;
+}
+
+.find input:hover { 
+  height: 50px;
+  color: rgb(154, 243, 213, 0.9);
+}
+
+.find input::placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color:rgb(181, 181, 181, 0.9)
+}
+
+.drop-down button {
+  background: transparent;
+  border: none;
+}
+
+.drop-down button a {
+  font-size: 50px;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.5s;
+  color: rgb(181, 181, 181);
+  text-decoration: none;
+  transition: font-sizek,color 0.5s;
+
+}
+
+.drop-down button a:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 55px;
+}
+
+.drop-down a {
+  display: block;
+  padding: 8px 8px;
+  margin: 4px 4px;
+  text-align: center;
+  width: 120px;
+  cursor: pointer;
+  list-style-type: none;
+  color: rgb(181, 181, 181);
+}
+
+
+/*.drop-down .content {
+  display: none;
+  position: absolute;
+  text-align: justify;
+  background-color: transparent;
+  font-size: 25px;
+  list-style-type: none;
+  color: rgb(181, 181, 181);
+}
+
+.drop-down .content a:hover {
+  color:rgb(154, 243, 213, 0.9)
+}
+
+.drop-down:hover .content {
+  display: block;
+  color: rgb(0, 0, 0);
+  z-index: 5;
+}*/
+
+
+.right-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.right-nav ul li {
+  text-decoration: none;
+}
+.right-nav a {
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.4s;
+  color: rgb(181, 181, 181);
+  transition: font-size,color 0.5s;
+}
+
+.right-nav ul a:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 30px;
+}
+.right-nav ul a.two:visited {
+  color: red; 
+}
+
+.header h1 {
+  font-size: 60px;
+  margin: 30px 0px 0px 50px;
+  padding: 5px 5px;
+  animation-name: all;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all 0.5s;
+}
+@keyframes all{
+  from {color: #FEE715;}
+  to {color: red;}
+}
+
+.main-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.box-one, .box-two, .box-three {
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 5px 3px;
+  border-radius: 20px;
+  width: 220px;
+  height: 320px;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  transition: border 0.5s;
+  transition: box-shadow 0.5s;
+}
+
+.main-box img {
+  width: 220px;
+  height: 320px;
+  position: absolute;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0,0.9);
+  left: 50px;
+  top: 50px;
+  transition: border 0.5s;
+  transition: box-shadow 0.4s;
+}
+.main-box img:hover {
+  border: 2px solid rgb(154, 243, 213, 0.9);
+  box-shadow: 3px 3px 5px 3px rgb(154, 243, 213, 0.9);
+}
+
+.one p, .two p, .three p {
+  position: absolute;
+  font-size: 25px;
+  overflow:scroll;
+  height: 150px;
+  width: 223px;
+  color: #FEE715;
+  background-color: rgba(0, 0, 0,0.5);
+  border-radius: 20px;
+  top: 225px;
+  left: 50px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.one:hover p, .two:hover p, .three:hover p{
+  visibility: visible;
+  color: red;
+}
+.box-one:hover, .box-two:hover, .box-three:hover {
+  box-shadow: 4px 4px 8px 4px rgba(255, 0, 0, 0.9);
+}
+
+.first-box {
+  position: relative;
+  height: 450px;
+  width: 1000px;
+  background: url(https://www.artnews.com/wp-content/uploads/2025/05/Laura-Owens-BFA_49837_7132807.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  top: 100px;
+  left: 100px;
+  transition: box-shadow 0.5s;
+}
+
+.header-two h1 {
+  font-size: 70px;
+  margin: 200px 0px 0px 50px;
+  transition: color 0.5s;
+  animation-name: all;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all 0.5s;
+}
+@keyframes all{
+  from {color: #FEE715;}
+  to {color: red;}
+}
+
+.head-one {
+  position: absolute;
+  background-color: rgba(0, 0, 0,0.8);
+  border-radius: 20px;
+  left: 350px;
+  top: 40px;
+  font-size: 30px;
+  margin: 30px 0;
+  width: 900px;
+  text-align: center;
+  color: rgb(33, 199, 199);
+  visibility: hidden;
+  transition: visibility, box-shadow 0.1s;
+}
+
+.first-box:hover {
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+.first-box:hover .head-one {
+  visibility: visible;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0,0.8);
+}
+
+.second-box {
+  position: relative;
+  height: 450px;
+  width: 1000px;
+  background: url(https://www.artnews.com/wp-content/uploads/2025/05/GettyImages-1364252414.jpg?crop=0px%2C0px%2C2121px%2C1192px&resize=450%2C253);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  top: 100px;
+  left: 300px;
+  transition: box-shadow 0.5s;
+}
+
+.head-two {
+  position: absolute;
+  background-color: rgba(0, 0, 0,0.8);
+  border-radius: 20px;
+  right: 300px;
+  top: 50px;
+  font-size: 30px;
+  color: rgb(33, 199, 199);
+  margin: 30px 0;
+  width: 900px;
+  text-align: center;
+  visibility: hidden;
+  transition: visibility, box-shadow 0.5s;
+}
+.second-box:hover {
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+.second-box:hover .head-two {
+  visibility: visible;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0,0.8);
+}
+
+.header-three h1 {
+  font-size: 70px;
+  margin: 170px 0px 150px 70px;
+  transition: color 0.5s;
+  animation-name: all;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all 0.5s;
+}
+@keyframes all{
+  from {color: #FEE715;}
+  to {color: red;}
+}
+
+.third-box {
+  position: relative;
+  background: url(https://www.artnews.com/wp-content/uploads/2025/05/NT2025_AGNES_Q_f.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-top: 130px;
+  margin-bottom: 400px;
+  left: 60px;
+  height: 300px;
+  width: 1250px;
+  box-shadow: 4px 4px 7px 4px;
+  transition: box-shadow 0.5s;
+}
+.third-box:hover {
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+.third-box h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0 0 0;
+  animation-name: all;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all 0.5s;
+}
+@keyframes all{
+  from {color: #FEE715;}
+  to {color: red;}
+}
+
+.sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 80px 0px 80px;
+}
+
+.head-three img, .head-three-sub img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 7px 4px;
+  transition: box-shadow 0.5s;
+}
+.head-three img:hover, .head-three-sub img:hover {
+  box-shadow: 4px 4px 7px 4px rgb(255, 255, 255);
+}
+
+.head-three p, .head-three-sub p {
+  font-size: 30px;
+  color: orange;
+  width: 400px;
+  height: 130px;
+  overflow: scroll;
+  transition: color 0.5s;
+}
+.head-three p:hover, .head-three-sub p:hover {
+  color: rgb(255, 0, 0);
+}

@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  min-height: 100vh;
+  background-image: url(folder/Download\ free\ image\ of\ Ancient\ greek\ style\ background\ architecture\ building\ outdoors_\ \ about\ background\,\ cloud\,\ sky\,\ person\,\ and\ building\ 13008404.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h2 {
+  position: absolute;
+  top: 10px;
+  left: 410px;
+  font-size: 60px;
+  width: 460px;
+  transition: color 0.5s;
+  cursor: pointer;
+  animation-name: welcome;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+}
+@keyframes welcome {
+  20% {color:rgb(0, 255, 242)} 
+  60% {color:rgb(72, 0, 160);}
+  100% {color: black;}
+}
+
+
+
+.login-box h1 {
+  text-align: center;
+  padding: 15px 10px 0px 0px;
+}
+
+.login-box h1 {
+  cursor: pointer;
+  transition: color 0.5s;
+  color:  rgb(66, 66, 112);
+}
+
+.login-box h1:hover {
+  color: rgb(0, 0, 0);
+}
+
+.login-box {
+  width: 400px;
+  height: 430px;
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 20px 5px;
+  
+}
+
+#icon1 {
+  margin-right: 13px;
+  font-size: 35px;
+}
+
+#icon2 {
+  margin-right: 13px;
+  font-size: 35px;
+}
+
+.input-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 15px 0px 0px;
+}
+
+.input-info input {
+  width: 250px;
+  height: 33px;
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.input-info input:hover {
+  width: 260px;
+  height: 35px;
+}
+
+.login-box p {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 23px;
+  transition: color 0.5s;
+  color:  rgb(66, 66, 112);
+}
+
+.login-box p:hover {
+  color:  rgb(0, 0, 0);
+}
+
+.login-box p a {
+  text-decoration: none;
+  color:  rgb(66, 66, 112);
+}
+
+.login-box p a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/*.login-box .next {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 45px;
+  cursor: pointer;
+  text-decoration: underline;
+}*/
+
+.click {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.click button {
+  height: 50px;
+  width: 90px;
+  padding: 3px 2px;
+  font-size: 17px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.click button a {
+  text-decoration: none;
+  color:  rgb(66, 66, 112);
+}
+
+.click button a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.click button:hover {
+  width: 95px;
+  height: 55px;
+  font-size: 20px;
+}
+
+.img1 img {
+  position: absolute;
+  left: 50px;
+  top: 70px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 5px;
+  animation-name: imgone;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+}
+@keyframes imgone {
+  50% { top: 30px;left: 30px;}
+  100% { width: 330px;height: 400px; }
+}
+
+.img1 img:hover {
+  width: 340px;
+  height: 410px;
+  box-shadow: 5px 5px 20px 5px rgb(71, 71, 142);
+}
+
+.img2 img {
+  position: absolute;
+  right: 50px;
+  top: 70px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 5px;
+  animation-name: imgone;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+}
+@keyframes imgone {
+  50% { top: 30px;right: 30px;}
+  100% { width: 330px;height: 400px; }
+}
+
+.img2 img:hover {
+  width: 340px;
+  height: 410px;
+  box-shadow: 5px 5px 20px 5px rgb(71, 71, 142);
+}
+
+.img3 img {
+  position: absolute;
+  left: 280px;
+  top: 450px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 5px;
+}
+
+.img3 img:hover {
+  width: 210px;
+  height: 260px;
+}
+
+.img4 img {
+  position: absolute;
+  right: 280px;
+  top: 450px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 5px;
+}
+
+.img4 img:hover {
+  width: 210px;
+  height: 260px;
+}

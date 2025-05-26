@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style: normal;
+  /*color: rgb(181, 181, 181);*/
+}
+
+body {
+   /*background-color: rgb(53, 53, 53);*/
+  background-image: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0,0.9);
+  /*background-color:rgba(78, 155, 129, 0.9);*/
+  border-bottom: 2px solid rgb(45, 45, 45);
+}
+
+#icon {
+  padding: 30px;
+  font-size: 50px;
+  cursor: pointer;
+  transition: color 0.5s;
+  color: rgb(181, 181, 181);
+}
+
+#icon:hover {
+  font-size: 60px;
+  color:rgb(154, 243, 213, 0.9)
+}
+
+#see {
+  position: absolute;
+  font-size: 30px;
+  top: 37px;
+  left: 515px;
+  color: rgb(181, 181, 181);
+  transition: color 0.5s;
+}
+
+#see:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 35px;
+}
+
+.find {
+  height: 50px;
+  width: 300px;
+}
+
+.find input[type="search"] {
+  margin-top: 4px;
+  height: 45px;
+  width: 330px;
+  margin-left: -15px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid rgb(181, 181, 181);
+  background: transparent;
+  font-size: 20px;
+  transition: width, height 0.3s;
+}
+
+.find input:hover { 
+  height: 50px;
+  color: rgb(154, 243, 213, 0.9);
+}
+
+.find input::placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color:rgb(181, 181, 181, 0.9)
+}
+
+.drop-down button {
+  background: transparent;
+  border: none;
+}
+
+.drop-down button a {
+  font-size: 50px;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.5s;
+  color: rgb(181, 181, 181);
+  text-decoration: none;
+  transition: font-sizek,color 0.5s;
+
+}
+
+.drop-down button a:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 55px;
+}
+
+.drop-down a {
+  display: block;
+  padding: 8px 8px;
+  margin: 4px 4px;
+  text-align: center;
+  width: 120px;
+  cursor: pointer;
+  list-style-type: none;
+  color: rgb(181, 181, 181);
+}
+.drop-down a.name:visited {
+  color: red;
+}
+
+
+/*.drop-down .content {
+  display: none;
+  position: absolute;
+  text-align: justify;
+  background-color: transparent;
+  font-size: 25px;
+  list-style-type: none;
+  color: rgb(181, 181, 181);
+}
+
+.drop-down .content a:hover {
+  color:rgb(154, 243, 213, 0.9)
+}
+
+.drop-down:hover .content {
+  display: block;
+  color: rgb(0, 0, 0);
+  z-index: 5;
+}*/
+
+
+.right-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.right-nav ul li {
+  text-decoration: none;
+}
+.right-nav a {
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.4s;
+  color: rgb(181, 181, 181);
+  transition: font-size,color 0.5s;
+}
+
+.right-nav ul a:hover {
+  color:rgb(154, 243, 213, 0.9);
+  font-size: 30px;
+}
+.right-nav ul a.one:visited{
+  color: red;
+}
+
+.main-box {
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: rgb(160, 160, 160);*/
+  background-color: transparent;
+  width: 1150px;
+  height: 500px;
+  margin: 70px 110px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px;
+  border: 2px solid black;
+}
+
+.main-box .head h2 {
+  font-size: 75px;
+  margin-top: -150px;
+  margin-left: -550px;
+  transition: color 0.5s;
+  transition: head 0.5s;
+  animation-name: head;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+@keyframes head {
+  from {color:black;}
+  to {color:white;}
+}
+
+.main-box .head h2:hover {
+  color:rgb(154, 243, 213, 0.9);
+}
+
+.main-box .paragraph pre { 
+  position: absolute;
+  font-size: 27px;
+  margin-left: -550px;
+  transition: head 0.5s;
+  animation-name: head;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  transition: color 0.5s;
+}
+@keyframes head {
+  from {color:black;}
+  to {color:white;}
+}
+
+.main-box .paragraph pre:hover {
+  color:rgb(154, 243, 213, 0.9);
+}
+
+.img1 {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  /*animation-name: image;
+  animation-duration: 4s;
+  animation-iteration-count: 2;*/
+}
+
+.img2 {
+  position: absolute;
+  top: 300px;
+  right: 250px;
+}
+
+.img3 {
+  position: absolute;
+  top: 260px;
+  right: 40px;
+}
+
+.img4 {
+  position: absolute;
+  top: 40px;
+  right: 250px;
+}
+
+.img5 {
+  position: absolute;
+  top: 205px;
+  right: 270px;
+}
+
+.img1 img, .img2 img, .img3 img, .img4 img, .img5 img {
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px 4px;
+  transition: border, box-shadow 0.5s;
+}
+
+.img1 img:hover, .img3 img:hover {
+  border: 2px solid rgb(154, 243, 213, 0.9);
+  box-shadow: 1px 1px 2px 1px rgb(154, 243, 213, 0.9);
+} 
+
+.img2 img:hover, .img4 img:hover {
+  border: 2px solid rgb(154, 243, 213, 0.9);
+  box-shadow: 1px 1px 2px 1px rgb(154, 243, 213, 0.9);
+}
+
+.img5 img:hover {
+  border: 2px solid rgb(154, 243, 213, 0.9);
+  box-shadow: 1px 1px 2px 1px rgb(154, 243, 213, 0.9);
+}
+
+.img1 .paris{
+  position: absolute;
+  text-align: center;
+  font-size: 45px;
+  bottom: 5px;
+  left: 40px;
+  background: transparent;
+  visibility: hidden;
+  color: rgb(154, 243, 213, 0.9);
+  transition: color 0.5s;
+}
+
+.img1:hover .paris {
+  visibility: visible;
+  color: rgb(154, 243, 213, 0.9);
+}
+.img1 .paris:hover {
+  color: black;
+}
+
+.img2 .rome {
+  position: absolute;
+  text-align: center;
+  font-size: 45px;
+  bottom: 5px;
+  left: 20px;
+  background: transparent;
+  visibility: hidden;
+  color:rgb(154, 243, 213, 0.9);
+  transition: color 0.5s;
+}
+
+.img2:hover .rome {
+  visibility: visible;
+}
+.img2 .rome:hover {
+  color: black;
+}
+
+.img3 .vincent {
+  position: absolute;
+  text-align: center;
+  font-size: 45px;
+  bottom: 5px;
+  left: 20px;
+  background: transparent;
+  visibility: hidden;
+  color:rgb(154, 243, 213, 0.9);
+  transition: color 0.5s;
+}
+
+.img3:hover .vincent {
+  visibility: visible;
+}
+.img3 .vincent:hover {
+  color: black;
+}
+
+.img4 .italy {
+  position: absolute;
+  text-align: center;
+  font-size: 45px;
+  bottom: 10px;
+  left: 30px;
+  background: transparent;
+  visibility: hidden;
+  color:rgb(154, 243, 213, 0.9);
+  transition: color 0.5s;
+}
+
+.img4:hover .italy {
+  visibility: visible;
+}
+.img4 .italy:hover {
+  color: black;
+}
+
+/*.img5 .fasa { 
+  position: absolute;
+  text-align: center;
+  font-size: 35px;
+  bottom: 40px;
+  right: 140px;
+  background: transparent;
+  visibility: hidden;
+  color:rgb(154, 243, 213, 0.9);
+}
+
+.img5:hover .fasa {
+  visibility: visible;
+}*/
+
+.contact {
+  position: absolute;
+  font-size: 45px;
+  left: 30px;
+  bottom: 5px;
+  padding: 5px 5px;
+  transition: contact 0.5s;
+  animation-name: contact;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+@keyframes contact {
+  from {color: black;}
+  to {color: rgb(255, 255, 255);}
+}
+
+.contact i {
+  transition: color,font-size 0.5s;
+}
+
+.contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact i:hover {
+  color: rgb(43, 245, 178);
+  font-size: 55px;
+}
+
