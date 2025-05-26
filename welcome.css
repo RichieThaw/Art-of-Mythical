@@ -28,7 +28,7 @@ body {
 .main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: first baseline;
   width: 1100px;
   height: 650px;
   margin: 30px 100px;
